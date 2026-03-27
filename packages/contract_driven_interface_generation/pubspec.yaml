@@ -1,6 +1,6 @@
 name: contract_driven_interface_generation
 description: >
-  Dart scaffold for contract-driven interface generation (implementation TBD).
+  Dart scaffold for contract-driven interface generation 
   Go counterpart lives in ../contract_driven_interface_generation/.
 version: 0.0.1
 publish_to: none
