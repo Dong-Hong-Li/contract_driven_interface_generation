@@ -1,0 +1,4408 @@
+components:
+  schemas:
+    internal_modules_auction_httpapi.AuctionDetailAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionDetailDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_auction_httpapi.AuctionListPageAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionListPageDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_auction_httpapi.AuctionOrderRecordPageAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionOrderRecordPageDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_auction_httpapi.AuctionRecordPageAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionRecordPageDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_auction_httpapi.AuctionRuntimeAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionRuntimeDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_auction_httpapi.AuctionSuccessFeedAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionSuccessFeedItemDTO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_auction_httpapi.BidListPageAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_auction.BidListPage'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_content_httpapi.AboutAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_content.AboutDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_content_httpapi.FAQListAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_content.FAQItemDTO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_finance_httpapi.CreateWalletOrderAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_finance.CreateWalletOrderDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_finance_httpapi.WalletOrderListAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_finance.WalletOrderDTO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_finance_httpapi.WalletOverviewAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_finance.WalletOverviewDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_finance_httpapi.WithdrawOrderListAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_finance.WithdrawOrderDTO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeBuyListingAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeBuyListingDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeBuyerOrdersAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeBuyerOrdersDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeCreateListingAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeCreateListingDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeIncomeListAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeIncomeItemDTO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeListingDetailAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeListingDetailDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeListingListAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeListingItemDTO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeMineListingsAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeMineListingsDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeOverviewAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeOverviewDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeRelistAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeRelistDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeSourceItemsAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeSourceItemDTO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_trade_httpapi.TradeWithdrawRecordListAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeWithdrawRecordDTO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_user_httpapi.AddressAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_user.AddressDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_user_httpapi.AddressListAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_user.AddressDTO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_user_httpapi.AuthTokenAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_user.AuthTokenDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_user_httpapi.MeAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_user.MeDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    internal_modules_user_httpapi.RegisterAPIResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/shop-backend_internal_modules_user.RegisterResultDTO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.AboutResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.AboutVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.AboutVO:
+      properties:
+        content:
+          example: 我们是一个专业的拍卖平台
+          type: string
+        updatedAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+      type: object
+    models.AdminAuctionListResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.AuctionListVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.AdminTopupOrderListResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/models.TopupOrderVO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    models.AdminUserResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.UserMeVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.AdminWithdrawOrderListResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/models.WithdrawOrderVO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    models.ApiResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          description: Optional payload; arbitrary JSON object when present (typed
+            as object in OpenAPI for codegen).
+          type: object
+        message:
+          example: ok
+          type: string
+      type: object
+    models.AuctionListVO:
+      properties:
+        list:
+          items:
+            $ref: '#/components/schemas/models.AuctionVO'
+          type: array
+          uniqueItems: false
+        page:
+          example: 1
+          type: integer
+        pageSize:
+          example: 20
+          type: integer
+        total:
+          example: 50
+          type: integer
+      type: object
+    models.AuctionPoolResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.AuctionPoolVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.AuctionPoolVO:
+      properties:
+        balance:
+          example: "50000.00"
+          type: string
+        id:
+          example: 1
+          type: integer
+      type: object
+    models.AuctionResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.AuctionVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.AuctionRulesResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.AuctionRulesVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.AuctionRulesVO:
+      properties:
+        highPoolMinDistributeAmount:
+          example: 1000
+          type: number
+        id:
+          example: 1
+          type: integer
+        lowPoolMinDistributeAmount:
+          example: 100
+          type: number
+        minQualificationCount:
+          example: 1
+          type: integer
+        unlockPriceMultiplier:
+          example: 1.5
+          type: number
+      type: object
+    models.AuctionVO:
+      properties:
+        countdownSec:
+          example: 30
+          type: integer
+        createdAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+        currentPrice:
+          example: 10.5
+          type: number
+        endAt:
+          example: "2023-01-01T01:00:00Z"
+          type: string
+        id:
+          example: 1
+          type: integer
+        productId:
+          example: 1
+          type: integer
+        productImage:
+          example: https://example.com/iphone.jpg
+          type: string
+        productTitle:
+          example: iPhone 15
+          type: string
+        startAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+        status:
+          example: live
+          type: string
+        step:
+          example: 0.001
+          type: number
+      type: object
+    models.CreateAddressRequest:
+      properties:
+        detailAddress:
+          example: 某某街道123号
+          type: string
+        isDefault:
+          example: false
+          type: boolean
+        phone:
+          example: "13800138000"
+          type: string
+        recipientName:
+          example: 张三
+          type: string
+        region:
+          example: 北京市朝阳区
+          type: string
+      required:
+      - detailAddress
+      - phone
+      - recipientName
+      - region
+      type: object
+    models.CreateAuctionRequest:
+      properties:
+        countdownSec:
+          example: 30
+          type: integer
+        currentPrice:
+          example: 1
+          type: number
+        durationHours:
+          example: 24
+          type: integer
+        productId:
+          example: 1
+          type: integer
+        step:
+          example: 0.001
+          type: number
+        unlockPrice:
+          example: 0
+          type: number
+      required:
+      - currentPrice
+      - productId
+      type: object
+    models.UpdateAuctionRulesRequest:
+      description: 管理员更新拍卖规则配置（请求体）
+      properties:
+        highPoolMinDistributeAmount:
+          type: number
+        lowPoolMinDistributeAmount:
+          type: number
+        minQualificationCount:
+          type: integer
+        unlockPriceMultiplier:
+          type: number
+      type: object
+    models.UpdateAuctionRequest:
+      description: 管理员更新拍卖（请求体）
+      properties:
+        startAt:
+          type: string
+        status:
+          type: string
+        unlockPrice:
+          type: number
+      type: object
+    models.CreateBidRequest:
+      properties:
+        amount:
+          example: 10.5
+          type: number
+      required:
+      - amount
+      type: object
+    models.CreateFAQRequest:
+      properties:
+        answer:
+          example: 注册账号后即可参与拍卖
+          type: string
+        question:
+          example: 如何参与拍卖？
+          type: string
+      required:
+      - answer
+      - question
+      type: object
+    models.CreateProductRequest:
+      properties:
+        description:
+          example: 最新款iPhone
+          type: string
+        imageUrl:
+          example: https://example.com/iphone.jpg
+          type: string
+        marketPrice:
+          example: 1099.99
+          type: number
+        price:
+          example: 999.99
+          type: number
+        status:
+          example: active
+          type: string
+        title:
+          example: iPhone 15
+          type: string
+      required:
+      - price
+      - title
+      type: object
+    models.CreateTopupRequest:
+      properties:
+        amount:
+          example: "100.00"
+          type: string
+        channel:
+          example: alipay
+          type: string
+      required:
+      - amount
+      - channel
+      type: object
+    models.CreateTradeListingRequest:
+      properties:
+        durationHours:
+          example: 72
+          type: integer
+        mode:
+          example: fixed_price
+          type: string
+        price:
+          example: "100.00"
+          type: string
+        sourceItemId:
+          example: auction_123
+          type: string
+      required:
+      - durationHours
+      - mode
+      - sourceItemId
+      type: object
+    models.CreateWithdrawRequest:
+      properties:
+        account:
+          example: user@example.com
+          type: string
+        amount:
+          example: "50.00"
+          type: string
+        channel:
+          example: alipay
+          type: string
+      required:
+      - account
+      - amount
+      - channel
+      type: object
+    models.DashboardStatsResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.DashboardStatsVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.DashboardStatsVO:
+      properties:
+        totalAuctions:
+          example: 500
+          type: integer
+        totalProducts:
+          example: 200
+          type: integer
+        totalRevenue:
+          example: "100000.00"
+          type: string
+        totalUsers:
+          example: 1000
+          type: integer
+      type: object
+    models.FAQResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.FAQVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.FAQVO:
+      properties:
+        answer:
+          example: 注册账号后即可参与拍卖
+          type: string
+        createdAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+        id:
+          example: 1
+          type: integer
+        question:
+          example: 如何参与拍卖？
+          type: string
+        updatedAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+      type: object
+    models.HealthCheckData:
+      properties:
+        status:
+          example: ok
+          type: string
+        time:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+      type: object
+    models.HealthCheckResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.HealthCheckData'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.LoginRequest:
+      properties:
+        password:
+          example: password123
+          minLength: 6
+          type: string
+        phone:
+          example: "13800138000"
+          type: string
+      required:
+      - password
+      - phone
+      type: object
+    models.ProductListResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.ProductListVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.ProductListVO:
+      properties:
+        list:
+          items:
+            $ref: '#/components/schemas/models.ProductVO'
+          type: array
+          uniqueItems: false
+        page:
+          example: 1
+          type: integer
+        pageSize:
+          example: 20
+          type: integer
+        total:
+          example: 30
+          type: integer
+      type: object
+    models.ProductResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.ProductVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.ProductVO:
+      properties:
+        createdAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+        description:
+          example: 最新款iPhone
+          type: string
+        id:
+          example: 1
+          type: integer
+        imageUrl:
+          example: https://example.com/iphone.jpg
+          type: string
+        imageUrls:
+          example:
+          - https://example.com/1.jpg
+          - https://example.com/2.jpg
+          items:
+            type: string
+          type: array
+          uniqueItems: false
+        marketPrice:
+          example: 1099.99
+          type: number
+        price:
+          example: 999.99
+          type: number
+        status:
+          example: active
+          type: string
+        title:
+          example: iPhone 15
+          type: string
+        updatedAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+      type: object
+    models.RegisterRequest:
+      properties:
+        confirmPassword:
+          example: password123
+          minLength: 6
+          type: string
+        password:
+          example: password123
+          minLength: 6
+          type: string
+        phone:
+          example: "13800138000"
+          type: string
+      required:
+      - confirmPassword
+      - password
+      - phone
+      type: object
+    models.SuccessData:
+      properties:
+        success:
+          example: true
+          type: boolean
+      type: object
+    models.SuccessResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.SuccessData'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.TopupOrderVO:
+      properties:
+        amount:
+          example: "100.00"
+          type: string
+        channel:
+          example: alipay
+          type: string
+        createdAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+        id:
+          example: 1
+          type: integer
+        status:
+          example: pending
+          type: string
+        updatedAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+      type: object
+    models.TradeBuyerOrdersResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/models.TradeListingVO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    models.TradeListingListResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          items:
+            $ref: '#/components/schemas/models.TradeListingVO'
+          type: array
+          uniqueItems: false
+        message:
+          example: ok
+          type: string
+      type: object
+    models.TradeListingVO:
+      properties:
+        createdAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+        expiresAt:
+          example: "2023-01-04T00:00:00Z"
+          type: string
+        id:
+          example: trade_123
+          type: string
+        imageUrl:
+          example: https://example.com/iphone.jpg
+          type: string
+        mode:
+          example: fixed_price
+          type: string
+        price:
+          example: "100.00"
+          type: string
+        sourceItemId:
+          example: auction_123
+          type: string
+        status:
+          example: active
+          type: string
+        title:
+          example: iPhone 15
+          type: string
+      type: object
+    models.UpdateAboutRequest:
+      properties:
+        content:
+          example: 我们是一个专业的拍卖平台
+          type: string
+      required:
+      - content
+      type: object
+    models.UpdateMeRequest:
+      properties:
+        address:
+          example: 北京市朝阳区
+          type: string
+        avatarUrl:
+          example: https://example.com/avatar.jpg
+          type: string
+        birthday:
+          example: "1990-01-01"
+          type: string
+        gender:
+          example: male
+          type: string
+        name:
+          example: 张三
+          type: string
+        region:
+          example: 北京市
+          type: string
+        signature:
+          example: 这是我的个性签名
+          type: string
+      required:
+      - name
+      type: object
+    models.UserListResponse:
+      properties:
+        code:
+          example: 0
+          type: integer
+        data:
+          $ref: '#/components/schemas/models.UserListVO'
+        message:
+          example: ok
+          type: string
+      type: object
+    models.UserListVO:
+      properties:
+        list:
+          items:
+            $ref: '#/components/schemas/models.UserMeVO'
+          type: array
+          uniqueItems: false
+        page:
+          example: 1
+          type: integer
+        pageSize:
+          example: 20
+          type: integer
+        total:
+          example: 100
+          type: integer
+      type: object
+    models.UserMeVO:
+      properties:
+        birthday:
+          example: "1990-01-01"
+          type: string
+        gender:
+          example: male
+          type: string
+        id:
+          example: 1
+          type: integer
+        name:
+          example: 张三
+          type: string
+        phone:
+          example: "13800138000"
+          type: string
+        region:
+          example: 北京市
+          type: string
+        signature:
+          example: 这是我的个性签名
+          type: string
+      type: object
+    models.WithdrawOrderVO:
+      properties:
+        account:
+          example: user@example.com
+          type: string
+        amount:
+          example: "50.00"
+          type: string
+        channel:
+          example: alipay
+          type: string
+        createdAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+        id:
+          example: 1
+          type: integer
+        reason:
+          example: ""
+          type: string
+        status:
+          example: pending
+          type: string
+        updatedAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+      type: object
+    shop-backend_internal_modules_auction.AuctionBidEventDTO:
+      properties:
+        amount:
+          type: number
+        avatarUrl:
+          type: string
+        bidderName:
+          type: string
+        bidderUserId:
+          type: integer
+        id:
+          type: string
+        leading:
+          type: boolean
+        maskedIp:
+          type: string
+        time:
+          type: string
+      type: object
+    shop-backend_internal_modules_auction.AuctionBidSummary:
+      properties:
+        totalBidAmount:
+          type: number
+        totalBidCount:
+          type: integer
+        totalUserBidAmount:
+          type: number
+        totalUserBidCount:
+          type: integer
+      type: object
+    shop-backend_internal_modules_auction.AuctionDetailDTO:
+      properties:
+        auctionNo:
+          type: string
+        bidEvents:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionBidEventDTO'
+          type: array
+          uniqueItems: false
+        bidRecords:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionBidEventDTO'
+          type: array
+          uniqueItems: false
+        bidSummary:
+          $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionBidSummary'
+        currentPrice:
+          type: number
+        description:
+          type: string
+        detailImageUrls:
+          items:
+            type: string
+          type: array
+          uniqueItems: false
+        endsAt:
+          type: string
+        id:
+          type: integer
+        imageUrl:
+          type: string
+        imageUrls:
+          items:
+            type: string
+          type: array
+          uniqueItems: false
+        lastBidder:
+          type: string
+        marketPrice:
+          type: number
+        participants:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionParticipantDTO'
+          type: array
+          uniqueItems: false
+        runtimeVersion:
+          type: integer
+        startAt:
+          type: string
+        status:
+          type: string
+        step:
+          type: number
+        title:
+          type: string
+        totalBidAmount:
+          type: number
+        totalBidCount:
+          type: integer
+        totalUserBidAmount:
+          type: number
+        totalUserBidCount:
+          type: integer
+        winnerUserId:
+          type: integer
+      type: object
+    shop-backend_internal_modules_auction.AuctionListItemDTO:
+      properties:
+        auctionNo:
+          type: string
+        currentPrice:
+          type: number
+        id:
+          type: integer
+        imageUrl:
+          type: string
+        imageUrls:
+          items:
+            type: string
+          type: array
+          uniqueItems: false
+        marketPrice:
+          type: number
+        remainSec:
+          type: integer
+        startAt:
+          type: string
+        status:
+          type: string
+        step:
+          type: number
+        title:
+          type: string
+      type: object
+    shop-backend_internal_modules_auction.AuctionListPageDTO:
+      properties:
+        list:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionListItemDTO'
+          type: array
+          uniqueItems: false
+        page:
+          type: integer
+        pageSize:
+          type: integer
+        total:
+          type: integer
+      type: object
+    shop-backend_internal_modules_auction.AuctionOrderRecordDTO:
+      properties:
+        auctionId:
+          type: integer
+        auctionNo:
+          type: string
+        auctionStatus:
+          type: string
+        id:
+          type: string
+        imageUrl:
+          type: string
+        imageUrls:
+          items:
+            type: string
+          type: array
+          uniqueItems: false
+        price:
+          type: string
+        recordType:
+          type: string
+        sourceItemId:
+          type: string
+        status:
+          type: string
+        timeText:
+          type: string
+        title:
+          type: string
+        updatedAt:
+          type: string
+      type: object
+    shop-backend_internal_modules_auction.AuctionOrderRecordPageDTO:
+      properties:
+        list:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionOrderRecordDTO'
+          type: array
+          uniqueItems: false
+        page:
+          type: integer
+        pageSize:
+          type: integer
+        total:
+          type: integer
+      type: object
+    shop-backend_internal_modules_auction.AuctionParticipantDTO:
+      properties:
+        avatarUrl:
+          type: string
+        lastPrice:
+          type: number
+        leading:
+          type: boolean
+        name:
+          type: string
+        type:
+          type: string
+        userId:
+          type: integer
+      type: object
+    shop-backend_internal_modules_auction.AuctionRecordDTO:
+      properties:
+        actionText:
+          type: string
+        auctionId:
+          type: integer
+        auctionNo:
+          type: string
+        auctionParticipationCount:
+          type: integer
+        id:
+          type: string
+        imageUrl:
+          type: string
+        imageUrls:
+          items:
+            type: string
+          type: array
+          uniqueItems: false
+        latestBidAmount:
+          type: number
+        latestBidAt:
+          type: string
+        marketPrice:
+          type: string
+        participationStatus:
+          type: string
+        price:
+          type: string
+        recordType:
+          type: string
+        sourceItemId:
+          type: string
+        status:
+          type: string
+        timeText:
+          type: string
+        title:
+          type: string
+        updatedAt:
+          type: string
+        userBidCountInAuction:
+          type: integer
+      type: object
+    shop-backend_internal_modules_auction.AuctionRecordPageDTO:
+      properties:
+        list:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionRecordDTO'
+          type: array
+          uniqueItems: false
+        page:
+          type: integer
+        pageSize:
+          type: integer
+        total:
+          type: integer
+      type: object
+    shop-backend_internal_modules_auction.AuctionRuntimeDTO:
+      properties:
+        bidEvents:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionBidEventDTO'
+          type: array
+          uniqueItems: false
+        bidRecords:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionBidEventDTO'
+          type: array
+          uniqueItems: false
+        bidSummary:
+          $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionBidSummary'
+        currentPrice:
+          type: number
+        endsAt:
+          type: string
+        id:
+          type: integer
+        lastBidder:
+          type: string
+        participants:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.AuctionParticipantDTO'
+          type: array
+          uniqueItems: false
+        runtimeVersion:
+          type: integer
+        status:
+          type: string
+        totalBidAmount:
+          type: number
+        totalBidCount:
+          type: integer
+        totalUserBidAmount:
+          type: number
+        totalUserBidCount:
+          type: integer
+        winnerUserId:
+          type: integer
+      type: object
+    shop-backend_internal_modules_auction.AuctionSuccessFeedItemDTO:
+      properties:
+        img:
+          type: string
+        price:
+          type: string
+        product:
+          type: string
+        time:
+          type: string
+        user:
+          type: string
+      type: object
+    shop-backend_internal_modules_auction.BidListItemDTO:
+      properties:
+        amount:
+          type: number
+        auctionId:
+          type: integer
+        auctionNo:
+          type: string
+        avatarUrl:
+          type: string
+        bidderName:
+          type: string
+        createdAt:
+          type: string
+        id:
+          type: integer
+        isRobot:
+          type: boolean
+        leading:
+          type: boolean
+        maskedIp:
+          type: string
+        userId:
+          type: string
+      type: object
+    shop-backend_internal_modules_auction.BidListPage:
+      properties:
+        list:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_auction.BidListItemDTO'
+          type: array
+          uniqueItems: false
+        page:
+          type: integer
+        pageSize:
+          type: integer
+        total:
+          type: integer
+      type: object
+    shop-backend_internal_modules_content.AboutDTO:
+      properties:
+        brand:
+          type: string
+        companyName:
+          type: string
+        content:
+          type: string
+        foundedAt:
+          type: string
+        hotline:
+          type: string
+        region:
+          type: string
+        supportMail:
+          type: string
+        version:
+          type: string
+      type: object
+    shop-backend_internal_modules_content.FAQItemDTO:
+      properties:
+        answer:
+          type: string
+        id:
+          type: integer
+        question:
+          type: string
+      type: object
+    shop-backend_internal_modules_finance.CreateWalletOrderDTO:
+      properties:
+        account:
+          type: string
+        amount:
+          type: number
+        channel:
+          type: string
+        createdAt:
+          type: string
+        orderId:
+          type: integer
+        status:
+          type: string
+      type: object
+    shop-backend_internal_modules_finance.WalletOrderDTO:
+      properties:
+        amount:
+          type: number
+        createdAt:
+          type: string
+        id:
+          type: integer
+        provider:
+          type: string
+        remark:
+          type: string
+        status:
+          type: string
+      type: object
+    shop-backend_internal_modules_finance.WalletOverviewDTO:
+      properties:
+        available:
+          type: number
+        balance:
+          type: number
+        currency:
+          type: string
+        frozen:
+          type: number
+      type: object
+    shop-backend_internal_modules_finance.WithdrawOrderDTO:
+      properties:
+        account:
+          type: string
+        amount:
+          type: number
+        createdAt:
+          type: string
+        id:
+          type: integer
+        provider:
+          type: string
+        remark:
+          type: string
+        status:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeBuyListingDTO:
+      properties:
+        amount:
+          type: string
+        listingId:
+          type: string
+        orderNo:
+          type: string
+        status:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeBuyerOrderItemDTO:
+      properties:
+        amount:
+          type: string
+        id:
+          type: string
+        leftMin:
+          type: integer
+        name:
+          type: string
+        pay:
+          type: string
+        status:
+          type: string
+        time:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeBuyerOrdersDTO:
+      properties:
+        list:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeBuyerOrderItemDTO'
+          type: array
+          uniqueItems: false
+        tab:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeCreateListingDTO:
+      properties:
+        durationHours:
+          type: integer
+        listingId:
+          type: string
+        mode:
+          type: string
+        price:
+          type: string
+        remainHours:
+          type: integer
+        sourceItemId:
+          type: string
+        status:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeDetailRecordDTO:
+      properties:
+        amount:
+          type: number
+        buyer:
+          type: string
+        time:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeIncomeItemDTO:
+      properties:
+        feeRate:
+          type: number
+        id:
+          type: integer
+        net:
+          type: number
+        time:
+          type: string
+        title:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeListingDetailDTO:
+      properties:
+        description:
+          type: string
+        detailImageUrls:
+          items:
+            type: string
+          type: array
+          uniqueItems: false
+        favorites:
+          type: integer
+        id:
+          type: string
+        image:
+          type: string
+        imageUrl:
+          type: string
+        imageUrls:
+          items:
+            type: string
+          type: array
+          uniqueItems: false
+        listedAt:
+          type: string
+        originalPrice:
+          type: number
+        price:
+          type: number
+        records:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeDetailRecordDTO'
+          type: array
+          uniqueItems: false
+        remainHours:
+          type: integer
+        seller:
+          $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeSellerDTO'
+        title:
+          type: string
+        views:
+          type: integer
+      type: object
+    shop-backend_internal_modules_trade.TradeListingItemDTO:
+      properties:
+        favorites:
+          type: integer
+        id:
+          type: string
+        image:
+          type: string
+        listedAt:
+          type: string
+        marketPrice:
+          type: number
+        modeLabel:
+          type: string
+        originalPrice:
+          type: number
+        price:
+          type: number
+        remainHours:
+          type: integer
+        sellerName:
+          type: string
+        title:
+          type: string
+        views:
+          type: integer
+      type: object
+    shop-backend_internal_modules_trade.TradeMineListingItemDTO:
+      properties:
+        amount:
+          type: string
+        id:
+          type: string
+        image:
+          type: string
+        name:
+          type: string
+        price:
+          type: string
+        reason:
+          type: string
+        remain:
+          type: integer
+        time:
+          type: string
+        views:
+          type: integer
+      type: object
+    shop-backend_internal_modules_trade.TradeMineListingsDTO:
+      properties:
+        list:
+          items:
+            $ref: '#/components/schemas/shop-backend_internal_modules_trade.TradeMineListingItemDTO'
+          type: array
+          uniqueItems: false
+        tab:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeOverviewDTO:
+      properties:
+        dealedCount:
+          type: integer
+        onSaleCount:
+          type: integer
+        withdrawable:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeRelistDTO:
+      properties:
+        listingId:
+          type: string
+        status:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeSellerDTO:
+      properties:
+        credit:
+          type: integer
+        nickname:
+          type: string
+      type: object
+    shop-backend_internal_modules_trade.TradeSourceItemDTO:
+      properties:
+        id:
+          type: string
+        image:
+          type: string
+        marketPrice:
+          type: number
+        title:
+          type: string
+        wonPrice:
+          type: number
+      type: object
+    shop-backend_internal_modules_trade.TradeWithdrawRecordDTO:
+      properties:
+        amount:
+          type: number
+        id:
+          type: string
+        status:
+          type: string
+        time:
+          type: string
+      type: object
+    shop-backend_internal_modules_user.AddressDTO:
+      properties:
+        createdAt:
+          type: string
+        detailAddress:
+          type: string
+        id:
+          type: integer
+        isDefault:
+          type: boolean
+        phone:
+          type: string
+        recipientName:
+          type: string
+        region:
+          type: string
+        updatedAt:
+          type: string
+      type: object
+    shop-backend_internal_modules_user.AuthTokenDTO:
+      properties:
+        accessToken:
+          type: string
+        expiresIn:
+          type: integer
+        refreshExpiresIn:
+          type: integer
+        refreshToken:
+          type: string
+        tokenType:
+          type: string
+        user:
+          $ref: '#/components/schemas/shop-backend_internal_modules_user.AuthUserDTO'
+      type: object
+    shop-backend_internal_modules_user.AuthUserDTO:
+      properties:
+        address:
+          type: string
+        avatar:
+          type: string
+        city:
+          type: string
+        id:
+          type: integer
+        lastLoginAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+        name:
+          type: string
+        phone:
+          type: string
+        role:
+          type: string
+        vipLevel:
+          type: integer
+      type: object
+    shop-backend_internal_modules_user.MeDTO:
+      properties:
+        address:
+          type: string
+        avatarUrl:
+          type: string
+        bio:
+          type: string
+        birthday:
+          type: string
+        city:
+          type: string
+        createdAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+        gender:
+          type: string
+        id:
+          type: integer
+        lastLoginAt:
+          example: "2023-01-01T00:00:00Z"
+          type: string
+        name:
+          type: string
+        phone:
+          type: string
+        vipLevel:
+          type: integer
+      type: object
+    shop-backend_internal_modules_user.RegisterResultDTO:
+      properties:
+        name:
+          type: string
+        phone:
+          type: string
+        userId:
+          type: integer
+      type: object
+  securitySchemes:
+    BearerAuth:
+      description: Type "Bearer" followed by a space and JWT token.
+      in: header
+      name: Authorization
+      type: apiKey
+externalDocs:
+  description: ""
+  url: ""
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: 拍卖与交易平台后端 REST API
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: BidBay Shop Backend API
+  version: "1.0"
+openapi: 3.1.0
+paths:
+  /admin/auction/pool:
+    get:
+      description: 获取平台拍卖奖池的余额信息
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.AuctionPoolResponse'
+          description: 奖池信息
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 获取拍卖奖池信息
+      tags:
+      - Admin
+  /admin/auction/rules:
+    get:
+      description: 获取当前的拍卖规则配置信息
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.AuctionRulesResponse'
+          description: 拍卖规则配置
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 获取拍卖规则配置
+      tags:
+      - Admin
+    put:
+      description: 更新拍卖规则的各项配置参数
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.UpdateAuctionRulesRequest'
+                title: request
+        description: 拍卖规则配置
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.AuctionRulesResponse'
+          description: 更新成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 更新拍卖规则配置
+      tags:
+      - Admin
+  /admin/auctions:
+    get:
+      description: 管理员获取所有拍卖的分页列表
+      parameters:
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      - description: 拍卖状态
+        in: query
+        name: status
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.AdminAuctionListResponse'
+          description: 拍卖列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 获取所有拍卖列表（管理员）
+      tags:
+      - Admin
+    post:
+      description: 管理员创建新的拍卖
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateAuctionRequest'
+                description: 拍卖信息
+                summary: request
+        description: 拍卖信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.AuctionResponse'
+          description: 拍卖创建成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 创建拍卖
+      tags:
+      - Admin
+  /admin/auctions/{id}:
+    delete:
+      description: 管理员删除拍卖
+      parameters:
+      - description: 拍卖ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 删除成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 拍卖ID无效
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 删除拍卖
+      tags:
+      - Admin
+    put:
+      description: 管理员更新拍卖信息
+      parameters:
+      - description: 拍卖ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.UpdateAuctionRequest'
+                title: request
+        description: 拍卖更新信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 更新成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 更新拍卖
+      tags:
+      - Admin
+  /admin/content/about:
+    put:
+      description: 管理员更新关于我们的内容
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.UpdateAboutRequest'
+                description: 关于我们内容
+                summary: request
+        description: 关于我们内容
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.AboutResponse'
+          description: 更新成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 内容不能为空
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 更新关于我们
+      tags:
+      - Admin
+  /admin/content/faq:
+    post:
+      description: 管理员创建新的常见问题
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateFAQRequest'
+                description: FAQ信息
+                summary: request
+        description: FAQ信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.FAQResponse'
+          description: FAQ创建成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 创建FAQ
+      tags:
+      - Admin
+  /admin/content/faq/{id}:
+    delete:
+      description: 管理员删除FAQ
+      parameters:
+      - description: FAQ ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 删除成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: FAQ不存在
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 删除FAQ
+      tags:
+      - Admin
+    put:
+      description: 管理员更新FAQ内容
+      parameters:
+      - description: FAQ ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateFAQRequest'
+                description: FAQ信息
+                summary: request
+        description: FAQ信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.FAQResponse'
+          description: 更新成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 更新FAQ
+      tags:
+      - Admin
+  /admin/dashboard/stats:
+    get:
+      description: 获取管理后台仪表盘的统计信息
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.DashboardStatsResponse'
+          description: 统计数据
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 获取仪表盘统计数据
+      tags:
+      - Admin
+  /admin/products:
+    get:
+      description: 分页获取商品列表，支持状态筛选
+      parameters:
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      - description: 商品状态
+        in: query
+        name: status
+        schema:
+          type: string
+      - description: 来源标识
+        in: query
+        name: sourceKey
+        schema:
+          type: string
+      - description: 来源URL
+        in: query
+        name: sourceUrl
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ProductListResponse'
+          description: 商品列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 获取商品列表
+      tags:
+      - Admin
+    post:
+      description: 创建新的商品
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateProductRequest'
+                description: 商品信息
+                summary: request
+        description: 商品信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 商品创建成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 创建商品
+      tags:
+      - Admin
+  /admin/products/{id}:
+    delete:
+      description: 删除指定的商品
+      parameters:
+      - description: 商品ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 删除成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 商品ID无效
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 删除商品
+      tags:
+      - Admin
+    get:
+      description: 根据ID获取商品的详细信息
+      parameters:
+      - description: 商品ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ProductResponse'
+          description: 商品详情
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 商品不存在
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 获取商品详情
+      tags:
+      - Admin
+    put:
+      description: 更新商品信息
+      parameters:
+      - description: 商品ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateProductRequest'
+                description: 商品信息
+                summary: request
+        description: 商品信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 更新成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 更新商品
+      tags:
+      - Admin
+  /admin/topup/{id}/approve:
+    post:
+      description: 管理员批准用户的充值订单
+      parameters:
+      - description: 充值订单ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 批准成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 订单不存在或已处理
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 批准充值订单（管理员）
+      tags:
+      - Admin
+  /admin/topup/{id}/reject:
+    post:
+      description: 管理员拒绝用户的充值订单
+      parameters:
+      - description: 充值订单ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - properties:
+                  reason:
+                    type: string
+                title: request
+                type: object
+        description: 拒绝原因
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 拒绝成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 订单不存在或已处理
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 拒绝充值订单（管理员）
+      tags:
+      - Admin
+  /admin/topup/orders:
+    get:
+      description: 管理员获取需要审核的充值订单列表
+      parameters:
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      - description: 订单状态
+        in: query
+        name: status
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.AdminTopupOrderListResponse'
+          description: 充值订单列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 获取充值审核订单列表（管理员）
+      tags:
+      - Admin
+  /admin/trade/buyer-orders:
+    get:
+      description: 管理员查看全站买家订单
+      parameters:
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      - description: 订单状态
+        in: query
+        name: status
+        schema:
+          type: string
+      - description: 关键词
+        in: query
+        name: keyword
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.TradeBuyerOrdersResponse'
+          description: 买家订单列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 管理端获取买家订单列表
+      tags:
+      - Admin
+  /admin/trade/listings:
+    get:
+      description: 管理员查看全站转卖单
+      parameters:
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      - description: 挂牌状态
+        in: query
+        name: status
+        schema:
+          type: string
+      - description: 关键词
+        in: query
+        name: keyword
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.TradeListingListResponse'
+          description: 转卖单列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 管理端获取转卖单列表
+      tags:
+      - Admin
+  /admin/trade/listings/{id}/off:
+    post:
+      description: 管理员下架任意在售转卖商品
+      parameters:
+      - description: 挂牌ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 下架成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 状态不允许
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 管理员下架转卖商品
+      tags:
+      - Admin
+  /admin/users:
+    get:
+      description: 管理员获取用户列表，支持分页
+      parameters:
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.UserListResponse'
+          description: 用户列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 获取用户列表（管理员）
+      tags:
+      - Admin
+  /admin/users/{id}:
+    get:
+      description: 管理员根据ID获取用户详细信息
+      parameters:
+      - description: 用户ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      - description: 拍卖记录页码
+        in: query
+        name: auctionPage
+        schema:
+          default: 1
+          type: integer
+      - description: 拍卖记录每页数量
+        in: query
+        name: auctionPageSize
+        schema:
+          default: 20
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.AdminUserResponse'
+          description: 用户详情
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 用户不存在
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 获取用户详情（管理员）
+      tags:
+      - Admin
+    put:
+      description: 管理员更新用户信息
+      parameters:
+      - description: 用户ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - properties:
+                  name:
+                    type: string
+                  role:
+                    type: string
+                  status:
+                    type: string
+                  vipLevel:
+                    type: integer
+                title: request
+                type: object
+        description: 用户信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 更新成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 更新用户信息（管理员）
+      tags:
+      - Admin
+  /admin/withdraw/{id}/approve:
+    post:
+      description: 管理员批准用户的提现订单
+      parameters:
+      - description: 提现订单ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 批准成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 订单不存在或已处理
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 批准提现订单（管理员）
+      tags:
+      - Admin
+  /admin/withdraw/{id}/reject:
+    post:
+      description: 管理员拒绝用户的提现订单
+      parameters:
+      - description: 提现订单ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - properties:
+                  reason:
+                    type: string
+                title: request
+                type: object
+        description: 拒绝原因
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 拒绝成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 订单不存在
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 拒绝提现订单（管理员）
+      tags:
+      - Admin
+  /admin/withdraw/orders:
+    get:
+      description: 管理员获取需要审核的提现订单列表
+      parameters:
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      - description: 订单状态
+        in: query
+        name: status
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.AdminWithdrawOrderListResponse'
+          description: 提现订单列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 非管理员
+      security:
+      - BearerAuth: []
+      summary: 获取提现审核订单列表（管理员）
+      tags:
+      - Admin
+  /app/auctions:
+    get:
+      description: 根据状态筛选获取拍卖列表
+      parameters:
+      - description: 拍卖状态
+        in: query
+        name: status
+        schema:
+          enum:
+          - live
+          - upcoming
+          - ended
+          type: string
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.AuctionListPageAPIResponse'
+          description: 拍卖列表
+      summary: 获取拍卖列表
+      tags:
+      - Auctions
+  /app/auctions/{id}:
+    get:
+      description: 根据ID获取拍卖的详细信息
+      parameters:
+      - description: 拍卖ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.AuctionDetailAPIResponse'
+          description: 拍卖详情
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 拍卖不存在
+      summary: 获取拍卖详情
+      tags:
+      - Auctions
+  /app/auctions/{id}/bids:
+    get:
+      description: 获取指定拍卖的出价记录列表
+      parameters:
+      - description: 拍卖ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      - description: 数据源
+        in: query
+        name: source
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.BidListPageAPIResponse'
+          description: 出价记录列表
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 拍卖不存在
+      summary: 获取拍卖出价记录
+      tags:
+      - Auctions
+    post:
+      description: 用户对指定拍卖进行出价
+      parameters:
+      - description: 拍卖ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateBidRequest'
+                description: 出价信息
+                summary: request
+        description: 出价信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.AuctionDetailAPIResponse'
+          description: 出价成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 余额不足或出价无效
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 对拍卖出价
+      tags:
+      - Auctions
+  /app/auctions/{id}/runtime:
+    get:
+      description: 获取拍卖的实时运行状态信息
+      parameters:
+      - description: 拍卖ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.AuctionRuntimeAPIResponse'
+          description: 拍卖运行时信息
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 拍卖不存在
+      summary: 获取拍卖运行时信息
+      tags:
+      - Auctions
+  /app/auctions/bids:
+    get:
+      description: 获取系统中所有的出价记录
+      parameters:
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      - description: 数据源
+        in: query
+        name: source
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.BidListPageAPIResponse'
+          description: 所有出价记录
+      summary: 获取所有出价记录
+      tags:
+      - Auctions
+  /app/auctions/ended:
+    get:
+      description: 获取已结束的拍卖列表
+      parameters:
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.AuctionListPageAPIResponse'
+          description: 已结束的拍卖列表
+      summary: 获取已结束的拍卖列表
+      tags:
+      - Auctions
+  /app/auctions/live:
+    get:
+      description: 获取当前正在进行的拍卖列表
+      parameters:
+      - description: 拍卖状态
+        in: query
+        name: status
+        schema:
+          default: live
+          type: string
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.AuctionListPageAPIResponse'
+          description: 直播拍卖列表
+      summary: 获取直播中的拍卖列表
+      tags:
+      - Auctions
+  /app/auctions/my-orders:
+    get:
+      description: 获取当前用户的订单记录
+      parameters:
+      - description: 订单状态
+        in: query
+        name: status
+        schema:
+          type: string
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.AuctionOrderRecordPageAPIResponse'
+          description: 订单记录列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取我的订单记录
+      tags:
+      - Auctions
+  /app/auctions/my-records:
+    get:
+      description: 获取当前用户的拍卖参与记录
+      parameters:
+      - description: 记录状态
+        in: query
+        name: status
+        schema:
+          type: string
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.AuctionRecordPageAPIResponse'
+          description: 拍卖记录列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取我的拍卖记录
+      tags:
+      - Auctions
+  /app/auctions/success-feed:
+    get:
+      description: 获取最近的拍卖成交动态信息
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.AuctionSuccessFeedAPIResponse'
+          description: 成交动态列表
+      summary: 获取拍卖成交动态
+      tags:
+      - Auctions
+  /app/auctions/upcoming:
+    get:
+      description: 获取即将开始的拍卖列表
+      parameters:
+      - description: 页码
+        in: query
+        name: page
+        schema:
+          default: 1
+          type: integer
+      - description: 每页数量
+        in: query
+        name: pageSize
+        schema:
+          default: 20
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_auction_httpapi.AuctionListPageAPIResponse'
+          description: 即将开始的拍卖列表
+      summary: 获取即将开始的拍卖列表
+      tags:
+      - Auctions
+  /app/content/about:
+    get:
+      description: 获取关于我们的内容
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_content_httpapi.AboutAPIResponse'
+          description: 关于我们内容
+      summary: 获取关于我们
+      tags:
+      - Content
+  /app/content/faq:
+    get:
+      description: 获取常见问题列表
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_content_httpapi.FAQListAPIResponse'
+          description: FAQ列表
+      summary: 获取FAQ列表
+      tags:
+      - Content
+  /app/trade/listings:
+    get:
+      description: 获取所有在售的交易挂牌列表
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeListingListAPIResponse'
+          description: 挂牌列表
+      summary: 获取交易挂牌列表
+      tags:
+      - Trade
+    post:
+      description: 用户创建新的交易挂牌
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateTradeListingRequest'
+                description: 挂牌信息
+                summary: request
+        description: 挂牌信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeCreateListingAPIResponse'
+          description: 挂牌创建成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误或业务校验失败
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 创建交易挂牌
+      tags:
+      - Trade
+  /app/trade/listings/{id}:
+    get:
+      description: 根据ID获取交易挂牌的详细信息
+      parameters:
+      - description: 挂牌ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeListingDetailAPIResponse'
+          description: 挂牌详情
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 挂牌不存在
+      summary: 获取交易挂牌详情
+      tags:
+      - Trade
+  /app/trade/listings/{id}/buy:
+    post:
+      description: 买家购买指定在售挂牌
+      parameters:
+      - description: 挂牌ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeBuyListingAPIResponse'
+          description: 购买成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 业务校验失败
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 购买交易挂牌
+      tags:
+      - Trade
+  /app/trade/mine/buyer-orders:
+    get:
+      description: 获取用户作为买家的订单列表
+      parameters:
+      - description: 标签页筛选
+        in: query
+        name: tab
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeBuyerOrdersAPIResponse'
+          description: 买家订单列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取我的买家订单
+      tags:
+      - Trade
+  /app/trade/mine/income:
+    get:
+      description: 获取用户的交易收入记录
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeIncomeListAPIResponse'
+          description: 交易收入列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取交易收入列表
+      tags:
+      - Trade
+  /app/trade/mine/listings:
+    get:
+      description: 获取当前用户的交易挂牌列表
+      parameters:
+      - description: 标签页筛选
+        in: query
+        name: tab
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeMineListingsAPIResponse'
+          description: 我的挂牌列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取我的挂牌列表
+      tags:
+      - Trade
+  /app/trade/mine/listings/{id}/off:
+    post:
+      description: 卖家主动下架在售中的交易商品
+      parameters:
+      - description: 挂牌ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeRelistAPIResponse'
+          description: 下架成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 挂牌不存在或状态不允许
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 下架交易商品
+      tags:
+      - Trade
+  /app/trade/mine/listings/{id}/relist:
+    post:
+      description: 将下架的交易商品重新上架
+      parameters:
+      - description: 挂牌ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeRelistAPIResponse'
+          description: 重新上架成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 挂牌不存在或状态不允许
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 重新上架交易商品
+      tags:
+      - Trade
+  /app/trade/mine/overview:
+    get:
+      description: 获取用户的交易概览统计信息
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeOverviewAPIResponse'
+          description: 交易概览
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取交易概览
+      tags:
+      - Trade
+  /app/trade/mine/withdraw-records:
+    get:
+      description: 获取用户的交易提现记录
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeWithdrawRecordListAPIResponse'
+          description: 交易提现记录
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取交易提现记录
+      tags:
+      - Trade
+  /app/trade/source-items:
+    get:
+      description: 获取用户可用于创建交易挂牌的来源商品列表
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_trade_httpapi.TradeSourceItemsAPIResponse'
+          description: 来源商品列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取可挂牌的来源商品
+      tags:
+      - Trade
+  /app/users/addresses:
+    get:
+      description: 获取当前用户的所有收货地址
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_user_httpapi.AddressListAPIResponse'
+          description: 地址列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取我的收货地址列表
+      tags:
+      - Users
+    post:
+      description: 为当前用户创建新的收货地址
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateAddressRequest'
+                description: 地址信息
+                summary: request
+        description: 地址信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_user_httpapi.AddressAPIResponse'
+          description: 创建成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 创建收货地址
+      tags:
+      - Users
+  /app/users/addresses/{id}:
+    delete:
+      description: 删除用户的收货地址
+      parameters:
+      - description: 地址ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 删除成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 地址不存在
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 删除收货地址
+      tags:
+      - Users
+    get:
+      description: 根据ID获取用户的单个收货地址
+      parameters:
+      - description: 地址ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_user_httpapi.AddressAPIResponse'
+          description: 地址信息
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 地址不存在
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取单个收货地址
+      tags:
+      - Users
+    put:
+      description: 更新用户的收货地址信息
+      parameters:
+      - description: 地址ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateAddressRequest'
+                description: 地址信息
+                summary: request
+        description: 地址信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_user_httpapi.AddressAPIResponse'
+          description: 更新成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误或地址不存在
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 更新收货地址
+      tags:
+      - Users
+  /app/users/addresses/{id}/default:
+    post:
+      description: 将指定地址设为默认收货地址
+      parameters:
+      - description: 地址ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_user_httpapi.AddressAPIResponse'
+          description: 设置成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 地址不存在
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 设为默认地址
+      tags:
+      - Users
+  /app/users/me:
+    get:
+      description: 获取当前登录用户的详细信息
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_user_httpapi.MeAPIResponse'
+          description: 用户信息
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取当前用户信息
+      tags:
+      - Users
+    put:
+      description: 更新当前登录用户的个人资料
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.UpdateMeRequest'
+                description: 用户信息
+                summary: request
+        description: 用户信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_user_httpapi.MeAPIResponse'
+          description: 更新成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 更新当前用户信息
+      tags:
+      - Users
+  /app/wallet/overview:
+    get:
+      description: 获取当前用户的钱包余额和统计信息
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_finance_httpapi.WalletOverviewAPIResponse'
+          description: 钱包信息
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取钱包概览
+      tags:
+      - Wallet
+  /app/wallet/topup/orders:
+    get:
+      description: 获取当前用户的充值订单列表
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_finance_httpapi.WalletOrderListAPIResponse'
+          description: 充值订单列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取充值订单列表
+      tags:
+      - Wallet
+    post:
+      description: 为当前用户创建充值订单
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateTopupRequest'
+                description: 充值信息
+                summary: request
+        description: 充值信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_finance_httpapi.CreateWalletOrderAPIResponse'
+          description: 充值订单创建成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 创建充值订单
+      tags:
+      - Wallet
+  /app/wallet/withdraw/orders:
+    get:
+      description: 获取当前用户的提现订单列表
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_finance_httpapi.WithdrawOrderListAPIResponse'
+          description: 提现订单列表
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 获取提现订单列表
+      tags:
+      - Wallet
+    post:
+      description: 为当前用户创建提现订单
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.CreateWithdrawRequest'
+                description: 提现信息
+                summary: request
+        description: 提现信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_finance_httpapi.CreateWalletOrderAPIResponse'
+          description: 提现订单创建成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 余额不足或参数错误
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 未授权
+      security:
+      - BearerAuth: []
+      summary: 创建提现订单
+      tags:
+      - Wallet
+  /auth/login:
+    post:
+      description: 用户登录获取JWT token
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.LoginRequest'
+                description: 登录信息
+                summary: request
+        description: 登录信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_user_httpapi.AuthTokenAPIResponse'
+          description: 登录成功
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 手机号或密码错误
+      summary: 用户登录
+      tags:
+      - Auth
+  /auth/logout:
+    post:
+      description: 用户登出
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.SuccessResponse'
+          description: 登出成功
+      summary: 用户登出
+      tags:
+      - Auth
+  /auth/refresh:
+    post:
+      description: 使用刷新令牌获取新的访问令牌
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - properties:
+                  refreshToken:
+                    type: string
+                title: request
+                type: object
+        description: 刷新令牌
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_user_httpapi.AuthTokenAPIResponse'
+          description: 令牌刷新成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 刷新令牌无效
+      summary: 刷新JWT令牌
+      tags:
+      - Auth
+  /auth/register:
+    post:
+      description: 注册新用户账号
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+              - type: object
+              - $ref: '#/components/schemas/models.RegisterRequest'
+                description: 注册信息
+                summary: request
+        description: 注册信息
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/internal_modules_user_httpapi.RegisterAPIResponse'
+          description: 注册成功
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.ApiResponse'
+          description: 参数错误或手机号已注册
+      summary: 用户注册
+      tags:
+      - Auth
+  /health:
+    get:
+      description: 检查服务器运行状态
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.HealthCheckResponse'
+          description: 服务正常
+      summary: 健康检查
+      tags:
+      - Health
+  /payments/notify:
+    post:
+      description: 处理第三方支付平台的回调通知
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: string
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                type: string
+          description: success
+        "400":
+          content:
+            text/plain:
+              schema:
+                type: string
+          description: fail
+      summary: 支付回调通知
+      tags:
+      - Payments
+servers:
+- url: localhost:8080/api

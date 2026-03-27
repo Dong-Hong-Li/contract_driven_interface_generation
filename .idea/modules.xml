@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/examples/consumer/melos_cdig_consumer_example.iml" filepath="$PROJECT_DIR$/examples/consumer/melos_cdig_consumer_example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/contract_driven_interface_generation/melos_contract_driven_interface_generation.iml" filepath="$PROJECT_DIR$/packages/contract_driven_interface_generation/melos_contract_driven_interface_generation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/contract_driven_interface_generation_net_retrofit/melos_contract_driven_interface_generation_net_retrofit.iml" filepath="$PROJECT_DIR$/packages/contract_driven_interface_generation_net_retrofit/melos_contract_driven_interface_generation_net_retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_contract_driven_interface_generation.iml" filepath="$PROJECT_DIR$/melos_contract_driven_interface_generation.iml" />
+    </modules>
+  </component>
+</project>

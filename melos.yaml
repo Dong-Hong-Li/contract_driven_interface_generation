@@ -1,0 +1,28 @@
+name: contract_driven_interface_generation
+
+packages:
+  - packages/**
+  - examples/**
+
+command:
+  bootstrap:
+    runPubGetInParallel: true
+
+scripts:
+  analyze:
+    run: dart run melos exec -c 3 --fail-fast -- dart analyze .
+    description: 全包静态分析
+  test:
+    run: dart run melos exec -c 3 --fail-fast -- dart test
+    description: 运行各包单元测试
+    packageFilters:
+      dirExists: test
+
+  # 在仓库根执行：dart run melos run codegen:example
+  codegen:example:
+    description: 示例 consumer：OpenAPI 生成 + build_runner（.g.dart）
+    run: bash tool/codegen_consumer_example.sh
+
+  run:example:
+    description: 运行 examples/consumer 入口（需先 codegen:example）
+    run: bash tool/run_consumer_example.sh

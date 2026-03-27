@@ -1,0 +1,11 @@
+name: contract_driven_interface_generation_monorepo
+description: >
+  单仓库根：聚合 OpenAPI 解析 / CLI 与 NetRetrofit 代码生成等子包，使用 Melos 管理。
+version: 0.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.6.0
+
+dev_dependencies:
+  melos: ^6.3.2

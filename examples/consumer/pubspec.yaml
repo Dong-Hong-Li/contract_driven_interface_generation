@@ -1,0 +1,38 @@
+name: cdig_consumer_example
+description: 演示业务工程如何通过 path 依赖生成器，并完成 OpenAPI → 接口 + build_runner。
+version: 0.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.9.0
+  net_retrofit_dio: ^0.2.0
+  # 仅用于 dart run contract_driven_interface_generation；生成代码 import 的是 net_retrofit_dio
+  contract_driven_interface_generation:
+    path: ../../packages/contract_driven_interface_generation
+
+dev_dependencies:
+  build_runner: ^2.13.1
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+# 路径相对本 pubspec 所在目录（项目根）
+contract_driven_interface_generation:
+  output_root: lib/generated
+  open_api_files:
+    - openapi/my_api.yaml
+  unwrap_success_data: false
+  dirs:
+    apis: apis
+    interfaces: interfaces
+    dto: models/dto
+    vo: models/vo
+  tag_to_file_prefix: {}
