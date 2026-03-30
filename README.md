@@ -13,7 +13,8 @@
 
 ## 环境要求
 
-- Dart SDK **^3.6.0**
+- Dart SDK **`>=3.5.0 <4.0.0`**（与各子包 `environment.sdk` 一致）
+- Flutter **>=3.16.0**（仅 `examples/consumer` 需要，见该包 `environment.flutter`）
 - **Flutter**（跑 `examples/consumer` 与 `net_retrofit_dio` 生成物）
 - 仓库根执行：`dart pub get` 已安装 **Melos**（见根目录 `pubspec.yaml`）
 

@@ -4,7 +4,9 @@ version: 0.0.0
 publish_to: none
 
 environment:
-  sdk: ^3.6.0
+  sdk: ">=3.5.0 <4.0.0"
+  # 与 pub.dev 常见插件一致：只约束 Flutter 最低版本，不设上限（随宿主工程 SDK）
+  flutter: ">=3.16.0"
 
 dependencies:
   flutter:
